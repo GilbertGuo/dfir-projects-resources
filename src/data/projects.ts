@@ -1,7 +1,7 @@
 // Update project URLs, descriptions, tags, and status labels here.
 export type ProjectStatus = "Live" | "Available on GitHub" | "In Progress";
 
-export type ProjectIcon = "portfolio" | "artifact" | "m365" | "gws" | "notes";
+export type ProjectIcon = "portfolio" | "artifact" | "m365" | "gws" | "aws";
 
 export interface Project {
   name: string;
@@ -51,19 +51,21 @@ export const projects: Project[] = [
   {
     name: "GWS Investigator Suite",
     type: "Investigation Toolkit",
-    description: "An investigation suite for reviewing and analyzing Google Workspace activity during security and incident-response investigations.",
-    tags: ["Google Workspace", "DFIR", "Investigation", "Security Automation"],
-    status: "In Progress",
-    buttonLabel: "Coming Soon",
+    description: "A local, case-based workbench for Google Workspace investigation exports, audit logs, enrichment, hunts, and analyst-ready CSV exports.",
+    tags: ["Google Workspace", "DFIR", "Python", "Incident Response"],
+    status: "Available on GitHub",
+    url: "https://github.com/GilbertGuo/GWS-Investigator-Suite",
+    buttonLabel: "View on GitHub",
     icon: "gws",
   },
   {
-    name: "Cloud Forensics Notes",
-    type: "Technical Knowledge Base",
-    description: "A structured collection of cloud-forensics notes, investigation procedures, commands, artifacts, and references.",
-    tags: ["Cloud Forensics", "AWS", "Azure", "Investigation Notes"],
-    status: "In Progress",
-    buttonLabel: "Coming Soon",
-    icon: "notes",
+    name: "AWS CloudTrail Event History Collector",
+    type: "Cloud Forensics Collector",
+    description: "A read-only, resumable Python collector for AWS CloudTrail Event History across enabled Regions, with compressed evidence pages and collection summaries.",
+    tags: ["AWS", "CloudTrail", "Python", "Cloud Forensics"],
+    status: "Available on GitHub",
+    url: "https://github.com/GilbertGuo/aws-cloudtrail-event-history-collector",
+    buttonLabel: "View on GitHub",
+    icon: "aws",
   },
 ];

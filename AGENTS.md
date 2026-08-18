@@ -11,5 +11,6 @@ When implementing from a selected generated mock, treat that image as the source
 - Use the selected responsive showcase mock with the spacious two-feature/three-supporting project mosaic.
 - The approved theme is lighter dark aubergine and plum with restrained antique-gold accents, soft lavender metadata, and warm ivory text.
 - Keep the visual language professional and DFIR-focused: subtle forensic contour/radar imagery, no neon, no terminal effects, and no ornamental luxury styling.
+- Present GWS Investigator Suite and AWS CloudTrail Event History Collector as available GitHub projects, linking their public repositories directly from their project cards.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

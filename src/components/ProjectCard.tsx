@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpen, BriefcaseBusiness, CloudCog, Clock3, Globe2, ScanSearch } from "lucide-react";
+import { ArrowUpRight, BriefcaseBusiness, CloudCog, CloudDownload, Clock3, Globe2, ScanSearch } from "lucide-react";
 import type { Project, ProjectIcon } from "../data/projects";
 import { StatusBadge } from "./StatusBadge";
 
@@ -7,7 +7,7 @@ const projectIcons: Record<ProjectIcon, typeof Globe2> = {
   artifact: ScanSearch,
   m365: BriefcaseBusiness,
   gws: CloudCog,
-  notes: BookOpen,
+  aws: CloudDownload,
 };
 
 export function ProjectCard({ project }: { project: Project }) {
